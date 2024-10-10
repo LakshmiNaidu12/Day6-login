@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NaturalFarms</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg" id="mynavbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" id="logo"><span>N</span>aturalFarms</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#shop">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+      <button class="btn btn-primary" type="button" id="loginBtn">Login</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Login and Register Forms -->
+<div class="wrapper">
+  <!-- Login Form -->
+  <div class="form-box login" id="login-form" style="display: none;">
+    <h2>Login</h2>
+    <button type="button" class="btn-close" onclick="hideLogin()" aria-label="Close"></button> <!-- Close button -->
+    <form action="#">
+      <div class="input-box">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="login-register">
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="form-box register" id="register-form" style="display:none;">
+    <h2>Register</h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" required>
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox"> Agree to the terms & conditions</label>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="login-register">
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Home Section -->
+<div class="home">
+  <div class="content">
+    <h5>Welcome To NaturalFarms</h5>
+    <p>Growing greatness from the ground-up.</p>
+  </div>
+</div>
+
+<!-- Shop Section -->
+<section class="shop" id="shop">
+  <div class="container">
+    <div class="main-txt">
+      <h1><span>S</span>hop</h1>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="cauliflower-isolated-transparent-background_191095-17077.avif" alt="Cauliflower" height="230px">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="close-up-view-woman-hand-holding-onion-basket-onions-maroon-background-with-copy-space_141793-5448.avif" alt="Onions" height="230px">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="fresh-red-tomatoes_2829-13449.avif" alt="Tomatoes" height="230px">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="main-txt">
+      <h1>About <span>Us</span></h1>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="beautiful-view-green-fields-sunrise-captured-canggu-bali_181624-14146.avif" alt="Farming Field">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2>How to Natural Farming</h2>
+        <p>In natural farming, there is no ploughing, no tilling of soil, and no use of fertilizers. Natural, farm-made pesticides like Dashparni ark and Neem Astra are used to control pests and diseases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <h1><span>N</span>aturalFarms</h1>
+  <p>Google Search checks for search terms related to specific websites to find the page relevant to your search.</p>
+  <div class="social-links">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-pinterest-p"></i>
+  </div>
+  <div class="credit">
+    <p>Designed By <a href="#">Lakshminaidu</a></p>
+  </div>
+  <div class="copyright">
+    <p>&copy;Copyright Lakshminaidu. All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Custom JS -->
+<script>
+  function showLogin() {
+    document.getElementById('login-form').style.display = 'block';
+    document.getElementById('register-form').style.display = 'none';
+  }
+
+  function hideLogin() {
+    document.getElementById('login-form').style.display = 'none';
+  }
+
+  function showRegister() {
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('register-form').style.display = 'block';
+  }
+
+  // Attach login button functionality
+  document.getElementById('loginBtn').addEventListener('click', showLogin);
+</script>
+
+</body>
+</html>
+
